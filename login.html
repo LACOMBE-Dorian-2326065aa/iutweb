@@ -5,19 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico">
 </head>
 <body>
-<header>
-    <img src="img/logo.svg" alt="Logo d'Aix-Marseille Université">
-    <nav>
-        <ul>
-            <li><a class="actual" href="/index.php">Accueil</a></li>
-            <li><a href="/formation/">Formation</a></li>
-            <li><a href="/bde/">BDE</a></li>
-            <li><a href="/intranet/">Intranet</a></li>
-            <li><a href="/login/">Se connecter</a></li>
-        </ul>
-    </nav>
-</header>
-</body>
+    <header>
+        <img src="img/logo.svg" alt="Logo d'Aix-Marseille Université">
+        <nav>
+            <ul>
+                <li><a class="actual" href="index.html">Accueil</a></li>
+                <li><a href="formation.html">Formation</a></li>
+                <li><a href="bde.html">BDE</a></li>
+                <li><a href="intranet.html">Intranet</a></li>
+                <li><a href="login.html">Se connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+        <form class="formulaire">
+            <div class="headerFormulaire">
+                <h2>Se connecter</h2>
+            </div>
+            <br>
+            <br>
+            <div class="contenuFormulaire">
+                <p>Choisir un nom d'utilisateur :</p>
+                <input type="text" placeholder="Nom d'utilisateur / Email" required>
+                <p>Choisir un mot de passe :</p>
+                <input type="password" placeholder="Mot de passe" required>
+                <br>
+                <br>
+                <input type="submit" value="Se connecter">
+             </div>
+            </form>
+    </body>
 </html>
