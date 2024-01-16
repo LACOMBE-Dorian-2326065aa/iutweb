@@ -78,20 +78,12 @@ main{
     padding-bottom: 2em;
 }
 
-/* .imgFond{
-    width: 90vw;
-} */
-
 .header_main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     padding: 2em 0;
     margin: 0;
-}
-
-.header_main div{
-    width: 40vw;
 }
 
 .annonces{
@@ -135,6 +127,10 @@ main{
     text-align: justify;
 }
 
+.annonces div{
+    width: 100%;
+} 
+
 .annonces .annonce_date{
     color: #888;
     text-align: right;
@@ -161,8 +157,7 @@ footer svg{
     width: 100%;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, -95%);
+    transform: translateY(-95%);
     z-index: -1;
 }
 
@@ -279,12 +274,12 @@ footer path{
 
 .sub_header_main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 2em;
 }
 
 .infos_images{
     width: 50vw;
-    margin: 2em auto 0 auto;
     border-radius: 5px;
     box-shadow: 0 0 4px #EEE0C7;
     padding: 1em;
@@ -334,7 +329,6 @@ footer path{
 
 .batiment{
     width: 30vw;
-    margin: 2em auto 0 auto;
     border-radius: 5px;
     box-shadow: 0 0 4px #EEE0C7;
     padding: 1em;
