@@ -105,7 +105,7 @@ main{
     padding-bottom: 0.8em;
     text-align: center;
     width: 60%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .header_main div div{
@@ -126,7 +126,7 @@ main{
     margin-top: 0.8em;
 }
 
-.header_main a{
+.header_main a, .sub_header_main a{
     text-decoration: none;
 }
 
@@ -284,8 +284,14 @@ footer{
     padding-left: 2vw;
     text-align: left;
 }
+
+.sub_header_main{
+    display: flex;
+    justify-content: space-around;
+}
+
 .infos_images{
-    width: 70vw;
+    width: 50vw;
     margin: 2em auto 0 auto;
     border-radius: 5px;
     box-shadow: 0 0 4px #EEE0C7;
@@ -296,13 +302,13 @@ footer{
     justify-content: center;
 }
 
-.infos_images h2{
+.sub_header_main h2{
     letter-spacing: 1px;
     border-bottom: 2px #313131 solid;
-    padding-bottom: 0.8em;
+    padding: 0.8em 0;
     text-align: center;
     width: 50%;
-    margin: auto;
+    margin: 0 auto auto auto;
 }
 
 .infos_images iframe{
@@ -311,14 +317,75 @@ footer{
     height: 25em;
     border-radius: 5px;
 }
+
+.infos_images p{
+    width: 45em;
+    padding: 0.8em 0;
+}
+
+.infos_images a{
+    background: #F08C21;
+    color: #f5f5f5;
+    padding: 0.5em 1em;
+    border-radius: 15em;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 1em;
+}
+
+.infos_images a:hover{
+    transform: scale(1.05);
+}
+
+.batiment{
+    width: 30vw;
+    margin: 2em auto 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #EEE0C7;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.batiment h2{
+    margin-bottom: 1em;
+}
+
+.batiment div{
+    width: 100%;
+    margin: auto;
+}
+
+.batiment h3{
+    padding: 1em 0;
+    border-bottom: 1px #313131 solid;
+}
+
+.batiment li{
+    list-style-type: disc;
+    max-width: 90%;
+    padding-top: 1em;
+}
+
+.batiment ul{
+    margin-bottom: 1em;
+}
+
+.batiment span{
+    font-family: Trebuchet MS, sans-serif
+}
+
 .discord_bde img{
     height: 5vw;
-    width: 5w;
+    width: 5vw;
 }
 
 .insta_bde img{
     height: 5vw;
-    width: 5w;
+    width: 5vw;
 }
 
 .discord_bde{
@@ -336,6 +403,36 @@ footer{
     flex-direction: column;
     text-align: center;
     text-decoration: none;
+}
+
+.reseaux_bde{
+    display: flex;
+    margin: auto;
+    width: 20vw;
+    justify-content: space-around;
+}
+
+.reseaux_bde a{
+    display: block;
+    width: min-content;
+}
+
+.discord_bde, .insta_bde{
+    width: min-content;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+::selection{
+    background-color: #F08C21;
+    color: #f5f5f5;
+}
+
+::-moz-selection{
+    background-color: #F08C21;
+    color: #f5f5f5;
 }
 
 .inputForm{
