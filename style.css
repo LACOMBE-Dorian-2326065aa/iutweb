@@ -398,10 +398,17 @@ footer{
     margin-right: 20%;
 }
 
+.discord_bde a{
+    text-decoration: none;
+}
+
 .insta_bde{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.insta_bde a{
     text-decoration: none;
 }
 
@@ -420,7 +427,9 @@ footer{
 .discord_bde, .insta_bde{
     width: min-content;
     justify-content: center;
+    padding-top: 2vw;
     align-items: center;
+    padding-bottom: 2vw;
 }
 
 
