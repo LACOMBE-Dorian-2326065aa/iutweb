@@ -301,27 +301,29 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: min-content;
 }
 
 .sub_header_main h2{
     letter-spacing: 1px;
-    border-bottom: 2px #313131 solid;
-    padding: 0.8em 0;
+    /* border-bottom: 2px #313131 solid; */
+    padding: 0.8em 0.5em;
     text-align: center;
-    width: 50%;
-    margin: 0 auto auto auto;
+    width: auto;
+    margin: 0 auto 1em auto;
 }
 
 .infos_images iframe{
-    margin-top: 2em;
-    width: 45em;
+    margin: auto;
+    width: 90%;
     height: 25em;
     border-radius: 5px;
 }
 
 .infos_images p{
-    width: 45em;
+    width: 90%;
     padding: 0.8em 0;
+    margin: auto;
 }
 
 .infos_images a{
@@ -332,7 +334,7 @@ footer{
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-top: 1em;
+    margin: 1em auto;
 }
 
 .infos_images a:hover{
@@ -367,7 +369,7 @@ footer{
 
 .batiment li{
     list-style-type: disc;
-    max-width: 90%;
+    max-width: 85%;
     padding-top: 1em;
 }
 
