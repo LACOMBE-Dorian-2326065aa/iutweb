@@ -460,7 +460,7 @@ footer path{
     background-size: cover;
     color: #fff;
     padding: 5vw 0;
-    height: 20vw;
+    height: 15vw;
 }
 
 .entete h1{
@@ -468,7 +468,7 @@ footer path{
     font-size: 4vw;
     width: 100%;
     height: 20vw;
-    padding: 8vw 0;
+    padding: 5vw 0;
     display: block;
 }
 
@@ -480,7 +480,7 @@ footer path{
     background-size: cover;
     color: #fff;
     padding: 5vw 0;
-    height: 20vw;
+    height: 15vw;
 }
 
 .entete2 h1{
@@ -488,6 +488,26 @@ footer path{
     font-size: 4vw;
     width: 100%;
     height: 20vw;
-    padding: 8vw 0;
+    padding: 5vw 0;
+    display: block;
+}
+
+.entete_index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('img/iut_aix.jpeg'); 
+    background-size: cover;
+    color: #fff;
+    padding: 5vw 0;
+    height: 15vw;
+}
+
+.entete_index h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 4vw;
+    width: 100%;
+    height: 20vw;
+    padding: 5vw 0;
     display: block;
 }
