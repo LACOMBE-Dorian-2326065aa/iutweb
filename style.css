@@ -38,6 +38,7 @@ nav a{
     font-weight: bold;
     position: relative;
     padding: 0.8em 0.2em;
+    font-size: 1em;
 }
 
 .actual{
@@ -98,8 +99,11 @@ main{
 
 .header_main h2{
     letter-spacing: 1px;
-    border-bottom: 1px #313131 solid;
-    padding-bottom: 0.5em;
+    border-bottom: 2px #313131 solid;
+    padding-bottom: 0.8em;
+    text-align: center;
+    width: 60%;
+    margin: auto;
 }
 
 .header_main div div{
@@ -110,9 +114,18 @@ main{
     padding: 1em;
 }
 
-.annonces svg{
+.header_main svg{
     margin-right: 0.8em;
     height: 1em;
+}
+
+.header_main li{
+    list-style-type: disc;
+    margin-top: 0.8em;
+}
+
+.header_main a{
+    text-decoration: none;
 }
 
 .annonces p{
@@ -209,46 +222,88 @@ footer{
 }
 
 .intro_bde{
-    margin-bottom: 10px;
     align-items: center;
     display: flex;
     background : #fff;
-    box-shadow: 0 0 2px black, -5px 3px 0 #FBBA00;
+    box-shadow: 0 0 2px black, -5px 5px 0 #FBBA00;
     border-radius: 5px;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 5px;
     text-align: center;
+    font-size: 110%;
+    padding : 1.5%
 }
 
 .carte_bde p{
     align-items: center;
     display: flex;
     background : #fff;
-    box-shadow: 0 0 2px black, -5px 3px 0 #FBBA00;
+    box-shadow: 0 0 2px black, -5px 5px 0 #FBBA00;
     border-radius: 5px;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px;
     text-align: center;
+    font-size: 110%;
+    padding : 1.5%
 }
 
-.lien_reseaux img{
+.infos_images{
+    width: 70vw;
+    margin: 2em auto 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #EEE0C7;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos_images h2{
+    letter-spacing: 1px;
+    border-bottom: 2px #313131 solid;
+    padding-bottom: 0.8em;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.infos_images iframe{
+    margin-top: 2em;
+    width: 45em;
+    height: 25em;
+    border-radius: 5px;
+}
+.discord_bde img{
     height: 5vw;
     width: 5w;
 }
 
-.lien_reseaux{
+.insta_bde img{
+    height: 5vw;
+    width: 5w;
+}
+
+.discord_bde{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-right: 20%;
+}
+
+.insta_bde{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     text-decoration: none;
 }
 
-.caseformation{
-    width: 15em;
-    border: 1px solid #333;
-    box-shadow: 8px 8px 5px #444;
-    padding: 8px 12px;
-    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
-}
