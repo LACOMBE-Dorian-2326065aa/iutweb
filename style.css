@@ -38,6 +38,7 @@ nav a{
     font-weight: bold;
     position: relative;
     padding: 0.8em 0.2em;
+    font-size: 1em;
 }
 
 .actual{
@@ -96,13 +97,16 @@ main{
     flex-direction: column;
 }
 
-.annonces h2{
+.header_main h2{
     letter-spacing: 1px;
-    border-bottom: 1px #313131 solid;
-    padding-bottom: 0.5em;
+    border-bottom: 2px #313131 solid;
+    padding-bottom: 0.8em;
+    text-align: center;
+    width: 60%;
+    margin: auto;
 }
 
-.annonces div{
+.header_main div div{
     width: 40vw;
     margin-top: 2em;
     border-radius: 5px;
@@ -110,9 +114,18 @@ main{
     padding: 1em;
 }
 
-.annonces svg{
+.header_main svg{
     margin-right: 0.8em;
     height: 1em;
+}
+
+.header_main li{
+    list-style-type: disc;
+    margin-top: 0.8em;
+}
+
+.header_main a{
+    text-decoration: none;
 }
 
 .annonces p{
@@ -123,6 +136,12 @@ main{
 .annonces .annonce_date{
     color: #888;
     text-align: right;
+}
+
+.header_main iframe{
+    width: 100%;
+    height: 25em;
+    margin-top: 1em; 
 }
 
 footer{
@@ -191,9 +210,9 @@ footer{
 }
 
 .carte_bde img{
-    padding-inline: 30px;
+    margin: 2vw;
     height: 40vw;
-    align-items: center;
+    text-align: center;
     margin-top: 2vw;
     border-radius: 20px;
 }
@@ -203,30 +222,35 @@ footer{
 }
 
 .intro_bde{
-    margin-bottom: 10px;
     align-items: center;
     display: flex;
     background : #fff;
-    box-shadow: 0 0 2px black, -5px 3px 0 #FBBA00;
+    box-shadow: 0 0 2px black, -5px 5px 0 #FBBA00;
     border-radius: 5px;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 5px;
     text-align: center;
+    font-size: 110%;
+    padding : 1.5%
 }
 
 .carte_bde p{
     align-items: center;
     display: flex;
     background : #fff;
-    box-shadow: 0 0 2px black, -5px 3px 0 #FBBA00;
+    box-shadow: 0 0 2px black, -5px 5px 0 #FBBA00;
     border-radius: 5px;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 30px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px;
     text-align: center;
+    font-size: 110%;
+    padding : 1.5%
 }
 
 
@@ -258,3 +282,57 @@ footer{
     padding-left: 2vw;
     text-align: left;
 }
+.infos_images{
+    width: 70vw;
+    margin: 2em auto 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #EEE0C7;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos_images h2{
+    letter-spacing: 1px;
+    border-bottom: 2px #313131 solid;
+    padding-bottom: 0.8em;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.infos_images iframe{
+    margin-top: 2em;
+    width: 45em;
+    height: 25em;
+    border-radius: 5px;
+}
+.discord_bde img{
+    height: 5vw;
+    width: 5w;
+}
+
+.insta_bde img{
+    height: 5vw;
+    width: 5w;
+}
+
+.discord_bde{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-right: 20%;
+}
+
+.insta_bde{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
