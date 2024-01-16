@@ -178,10 +178,15 @@ footer path{
 .footer_mentions a{
     color: #e6e6e6;
     margin: 0 0.5em;
+    text-decoration: none;
+}
+
+.footer_mentions a:hover{
+    text-decoration: underline;
 }
 
 .footer_reseaux{
-    margin-top: 1em;
+    margin-top: 1.5em;
     width: 15vw;
     display: flex;
     align-items: center;
