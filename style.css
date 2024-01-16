@@ -463,7 +463,9 @@ footer{
     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
     margin: auto;
 
-}.entete{
+}
+
+.entete{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -475,6 +477,26 @@ footer{
 }
 
 .entete h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 4vw;
+    width: 100%;
+    height: 20vw;
+    padding: 8vw 0;
+    display: block;
+}
+
+.entete2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('img/but_info.jpg'); 
+    background-size: cover;
+    color: #fff;
+    padding: 5vw 0;
+    height: 20vw;
+}
+
+.entete2 h1{
     font-family: 'Playfair Display', serif;
     font-size: 4vw;
     width: 100%;
