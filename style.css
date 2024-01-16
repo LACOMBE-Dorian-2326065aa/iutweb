@@ -244,3 +244,16 @@ footer{
     text-align: center;
     text-decoration: none;
 }
+
+.caseformation{
+    color: white;
+    background : #00558B;
+    text-align: center;
+    box-shadow: 0 0 2px black, -5px 3px 0 #fbba00;
+    border-radius: 5px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
