@@ -228,3 +228,10 @@ footer{
     padding: 5px;
     text-align: center;
 }
+
+.carte_bde a{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    height : 10px;
+}
