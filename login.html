@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.svg" alt="Logo d'Aix-Marseille Université">
+        <a href="index.html"><img src="img/logo.svg" alt="Logo d'Aix-Marseille Université"></a>
         <nav>
             <ul>
                 <li><a class="actual" href="index.html">Accueil</a></li>
@@ -20,21 +20,34 @@
             </ul>
         </nav>
     </header>
-        <form class="formulaire">
-            <div class="headerFormulaire">
-                <h2>Se connecter</h2>
+    <form class="formulaire">
+        <div class="headerFormulaire">
+            <h2>Connexion :</h2>
+        </div>
+        <br>
+        <br>
+        <div class="contenuFormulaire">
+            <p>Nom d'utilisateur :</p>
+            <input class="inputForm" type="text" placeholder="Nom d'utilisateur / Email" required>
+            <p>Mot de passe :</p>
+            <input class="inputForm" type="password" placeholder="Mot de passe" required>
+            <br>
+            <br>
+            <input class="inputForm" type="submit" value="Se connecter">
+        </div>
+    </form>
+    <footer>
+        <img src="img/logo_footer.svg" alt="Logo du bas de la page d'Aix Aix-Marseille Université">
+        <h2 class="TitreFooter"><a href="#" class="TitreFooterA">2024 - Tous droits réservés.</a></h2>
+        <p class="TextFooter">Consultez les mentions légales juste <a href="#" class="TextFooterA">ici</a></p>
+        <div class="DivSocials">
+            <p class="SocialsFooter">Retrouvez nos réseaux sociaux</p>
+            <div class="DivDivSocials">
+                <img class="logofacebook" src="img/facebook.png">
+                <img class="logoIut" src="img/logo_iut.png">
+                <img class="logoDiscord" src="img/Discord.png">
             </div>
-            <br>
-            <br>
-            <div class="contenuFormulaire">
-                <p>Choisir un nom d'utilisateur :</p>
-                <input type="text" placeholder="Nom d'utilisateur / Email" required>
-                <p>Choisir un mot de passe :</p>
-                <input type="password" placeholder="Mot de passe" required>
-                <br>
-                <br>
-                <input type="submit" value="Se connecter">
-             </div>
-            </form>
-    </body>
+        </div>
+    </footer>
+</body>
 </html>

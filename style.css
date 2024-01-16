@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -103,7 +105,7 @@ main{
     padding-bottom: 0.8em;
     text-align: center;
     width: 60%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .header_main div div{
@@ -124,7 +126,7 @@ main{
     margin-top: 0.8em;
 }
 
-.header_main a{
+.header_main a, .sub_header_main a{
     text-decoration: none;
 }
 
@@ -145,68 +147,59 @@ main{
 }
 
 footer{
+    margin-top: 8em;
+    position: relative;
+    padding-bottom: 1em;
     display: flex;
-    height: 10vw;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     background-color: #00558B;
 }
 
-.TitreFooter{
-    color: #f5f5f5;
-    list-style-type: none;
-    width: max-content;
-    position: relative;
+footer svg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    z-index: -1;
 }
 
-.TitreFooterA{
+footer path{
+    fill: #00558B;
+}
+
+.copyright{
+    color: #f5f5f5;
+    margin-top: 1em;
+}
+
+.footer_mentions a{
+    color: #e6e6e6;
+    margin: 0 0.5em;
     text-decoration: none;
-    color: #f5f5f5;
-    font-weight: bold;
-    position: relative;
-    padding: 0.8em 0.2em;
 }
 
-.TextFooter{
-    text-decoration: none;
-    color: #f5f5f5;
+.footer_mentions a:hover{
+    text-decoration: underline;
 }
 
-.TextFooterA{
-    text-decoration: none;
-    color: #f5f5f5;
-    font-weight: bold;
-    position: relative;
+.footer_reseaux{
+    margin-top: 1.5em;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.SocialsFooter{
-    justify-content: right;
-    text-align: center;
-    color: #f5f5f5;
+.logofacebook, .logoIut, .logoDiscord{
+    width: 3vw;
+    transition: 150ms ease-in-out;
 }
 
-.DivSocials{
-    justify-content: center;
-    flex-direction: column;
-}
-
-.DivDivSocials{
-    flex-direction: row
-}
-
-.logofacebook{
-    height: 3vw;
-    margin-top: 2vw;
-}
-.logoIut{
-    margin-left: 2vw;
-    height: 3vw;
-    margin-top: 2vw;
-}
-.logoDiscord{
-    margin-left: 2vw;
-    height: 3vw;
-    margin-top: 2vw;
+.logofacebook:hover, .logoIut:hover, .logoDiscord:hover{
+    transform: scale(1.05);
 }
 
 .carte_bde img{
@@ -267,7 +260,7 @@ footer{
     margin-bottom: 2vw;
     flex-direction: column;
     font-size: 2vw;
-    border : 0.2vw solid #000000;
+    box-shadow: 0px 0px 15px #000000;
 }
 
 .headerFormulaire{
@@ -276,14 +269,71 @@ footer{
     text-align: center;
     border-top-right-radius: 1vw;
     border-top-left-radius: 1vw;
+    border : 0.2vw solid #000000;
 }
 
 .contenuFormulaire{
     padding-left: 2vw;
     text-align: left;
 }
+
+.sub_header_main{
+    display: flex;
+    justify-content: space-around;
+}
+
 .infos_images{
-    width: 70vw;
+    width: 50vw;
+    margin: 2em auto 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #EEE0C7;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: min-content;
+}
+
+.sub_header_main h2{
+    letter-spacing: 1px;
+    /* border-bottom: 2px #313131 solid; */
+    padding: 0.8em 0.5em;
+    text-align: center;
+    width: auto;
+    margin: 0 auto 1em auto;
+}
+
+.infos_images iframe{
+    margin: auto;
+    width: 90%;
+    height: 25em;
+    border-radius: 5px;
+}
+
+.infos_images p{
+    width: 90%;
+    padding: 0.8em 0;
+    margin: auto;
+}
+
+.infos_images a{
+    background: #F08C21;
+    color: #f5f5f5;
+    padding: 0.5em 1em;
+    border-radius: 15em;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 1em auto;
+}
+
+.infos_images a:hover{
+    transform: scale(1.05);
+}
+
+.batiment{
+    width: 30vw;
     margin: 2em auto 0 auto;
     border-radius: 5px;
     box-shadow: 0 0 4px #EEE0C7;
@@ -294,29 +344,42 @@ footer{
     justify-content: center;
 }
 
-.infos_images h2{
-    letter-spacing: 1px;
-    border-bottom: 2px #313131 solid;
-    padding-bottom: 0.8em;
-    text-align: center;
-    width: 50%;
+.batiment h2{
+    margin-bottom: 1em;
+}
+
+.batiment div{
+    width: 100%;
     margin: auto;
 }
 
-.infos_images iframe{
-    margin-top: 2em;
-    width: 45em;
-    height: 25em;
-    border-radius: 5px;
+.batiment h3{
+    padding: 1em 0;
+    border-bottom: 1px #313131 solid;
 }
+
+.batiment li{
+    list-style-type: disc;
+    max-width: 85%;
+    padding-top: 1em;
+}
+
+.batiment ul{
+    margin-bottom: 1em;
+}
+
+.batiment span{
+    font-family: Trebuchet MS, sans-serif
+}
+
 .discord_bde img{
     height: 5vw;
-    width: 5w;
+    width: 5vw;
 }
 
 .insta_bde img{
     height: 5vw;
-    width: 5w;
+    width: 5vw;
 }
 
 .discord_bde{
@@ -336,6 +399,46 @@ footer{
     text-decoration: none;
 }
 
+.reseaux_bde{
+    display: flex;
+    margin: auto;
+    width: 20vw;
+    justify-content: space-around;
+}
+
+.reseaux_bde a{
+    display: block;
+    width: min-content;
+}
+
+.discord_bde, .insta_bde{
+    width: min-content;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+::selection{
+    background-color: #F08C21;
+    color: #f5f5f5;
+}
+
+::-moz-selection{
+    background-color: #F08C21;
+    color: #f5f5f5;
+}
+
+.inputForm{
+    height: 30px;
+    width: 350px;
+}
+
+.inputForm:hover{
+    height: 35px;
+    width: 355px;
+    background-color: lightgray;
+}
 .caseformation{
     border: 1px solid #686868;
     border-radius: 1px solid rgb(99, 99, 99);
