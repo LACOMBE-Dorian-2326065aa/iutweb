@@ -191,11 +191,11 @@ footer{
 }
 
 .carte_bde img{
-    padding-inline: 20px;
+    padding-inline: 30px;
     height: 40vw;
     align-items: center;
     margin-top: 2vw;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .carte_bde{
@@ -223,7 +223,7 @@ footer{
     border-radius: 5px;
     margin-left: 15vw;
     margin-right: 15vw;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     padding: 5px;
     text-align: center;
