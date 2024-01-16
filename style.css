@@ -381,12 +381,12 @@ footer{
 
 .discord_bde img{
     height: 5vw;
-    width: 5w;
+    width: 5vw;
 }
 
 .insta_bde img{
     height: 5vw;
-    width: 5w;
+    width: 5vw;
 }
 
 .discord_bde{
@@ -404,6 +404,24 @@ footer{
     flex-direction: column;
     text-align: center;
     text-decoration: none;
+}
+
+.reseaux_bde{
+    display: flex;
+    margin: auto;
+    width: 20vw;
+    justify-content: space-around;
+}
+
+.reseaux_bde a{
+    display: block;
+    width: min-content;
+}
+
+.discord_bde, .insta_bde{
+    width: min-content;
+    justify-content: center;
+    align-items: center;
 }
 
 
