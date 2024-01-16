@@ -78,20 +78,12 @@ main{
     padding-bottom: 2em;
 }
 
-/* .imgFond{
-    width: 90vw;
-} */
-
 .header_main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     padding: 2em 0;
     margin: 0;
-}
-
-.header_main div{
-    width: 40vw;
 }
 
 .annonces{
@@ -135,6 +127,10 @@ main{
     text-align: justify;
 }
 
+.annonces div{
+    width: 100%;
+} 
+
 .annonces .annonce_date{
     color: #888;
     text-align: right;
@@ -147,68 +143,58 @@ main{
 }
 
 footer{
+    margin-top: 8em;
+    position: relative;
+    padding-bottom: 1em;
     display: flex;
-    height: 10vw;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     background-color: #00558B;
 }
 
-.TitreFooter{
-    color: #f5f5f5;
-    list-style-type: none;
-    width: max-content;
-    position: relative;
+footer svg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateY(-95%);
+    z-index: -1;
 }
 
-.TitreFooterA{
+footer path{
+    fill: #00558B;
+}
+
+.copyright{
+    color: #f5f5f5;
+    margin-top: 1em;
+}
+
+.footer_mentions a{
+    color: #e6e6e6;
+    margin: 0 0.5em;
     text-decoration: none;
-    color: #f5f5f5;
-    font-weight: bold;
-    position: relative;
-    padding: 0.8em 0.2em;
 }
 
-.TextFooter{
-    text-decoration: none;
-    color: #f5f5f5;
+.footer_mentions a:hover{
+    text-decoration: underline;
 }
 
-.TextFooterA{
-    text-decoration: none;
-    color: #f5f5f5;
-    font-weight: bold;
-    position: relative;
+.footer_reseaux{
+    margin-top: 1.5em;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.SocialsFooter{
-    justify-content: right;
-    text-align: center;
-    color: #f5f5f5;
+.logofacebook, .logoIut, .logoDiscord{
+    width: 3vw;
+    transition: 150ms ease-in-out;
 }
 
-.DivSocials{
-    justify-content: center;
-    flex-direction: column;
-}
-
-.DivDivSocials{
-    flex-direction: row
-}
-
-.logofacebook{
-    height: 3vw;
-    margin-top: 2vw;
-}
-.logoIut{
-    margin-left: 2vw;
-    height: 3vw;
-    margin-top: 2vw;
-}
-.logoDiscord{
-    margin-left: 2vw;
-    height: 3vw;
-    margin-top: 2vw;
+.logofacebook:hover, .logoIut:hover, .logoDiscord:hover{
+    transform: scale(1.05);
 }
 
 .carte_bde img{
@@ -287,12 +273,12 @@ footer{
 
 .sub_header_main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 2em;
 }
 
 .infos_images{
     width: 50vw;
-    margin: 2em auto 0 auto;
     border-radius: 5px;
     box-shadow: 0 0 4px #EEE0C7;
     padding: 1em;
@@ -300,27 +286,29 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: min-content;
 }
 
 .sub_header_main h2{
     letter-spacing: 1px;
-    border-bottom: 2px #313131 solid;
-    padding: 0.8em 0;
+    /* border-bottom: 2px #313131 solid; */
+    padding: 0.8em 0.5em;
     text-align: center;
-    width: 50%;
-    margin: 0 auto auto auto;
+    width: auto;
+    margin: 0 auto 1em auto;
 }
 
 .infos_images iframe{
-    margin-top: 2em;
-    width: 45em;
+    margin: auto;
+    width: 90%;
     height: 25em;
     border-radius: 5px;
 }
 
 .infos_images p{
-    width: 45em;
+    width: 90%;
     padding: 0.8em 0;
+    margin: auto;
 }
 
 .infos_images a{
@@ -331,7 +319,7 @@ footer{
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-top: 1em;
+    margin: 1em auto;
 }
 
 .infos_images a:hover{
@@ -340,7 +328,6 @@ footer{
 
 .batiment{
     width: 30vw;
-    margin: 2em auto 0 auto;
     border-radius: 5px;
     box-shadow: 0 0 4px #EEE0C7;
     padding: 1em;
@@ -366,7 +353,7 @@ footer{
 
 .batiment li{
     list-style-type: disc;
-    max-width: 90%;
+    max-width: 85%;
     padding-top: 1em;
 }
 
@@ -455,12 +442,12 @@ footer{
     background-color: lightgray;
 }
 .caseformation{
-    width: 15em;
     border: 1px solid #686868;
     border-radius: 1px solid rgb(99, 99, 99);
-    box-shadow: 8px 8px 5px #444;
+    box-shadow: 0px 0px 8px #444;
     padding: 8px 12px;
-    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    width: 60%;
+    border-radius: 1%;
     margin: auto;
 
 }
