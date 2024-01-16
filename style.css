@@ -12,9 +12,17 @@ header{
     display: flex;
 }
 
+header > a{
+    background: #fff;
+    transform: skew(-30deg);
+}
+
 header img{
-    filter: drop-shadow(0 0 1px #fff);
     width: 30vw;
+    transform: skew(30deg);
+    padding-left: 15vw;
+    margin-left: -15vw;
+    background: linear-gradient(to right, #fff 50%, rgba(0, 0, 0, 0) 50%);
 }
 
 header nav{
@@ -374,30 +382,6 @@ footer path{
     width: 5vw;
 }
 
-.discord_bde{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 5%;
-    margin-top: 2%;
-    margin-right: 20%;
-}
-
-.discord_bde a{
-    text-decoration: none;
-}
-
-.insta_bde{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.insta_bde a{
-    text-decoration: none;
-}
-
 .reseaux_bde{
     display: flex;
     margin: auto;
@@ -408,10 +392,15 @@ footer path{
 .reseaux_bde a{
     display: block;
     width: min-content;
+    text-decoration: none;
+    color: #313131;
 }
 
 .discord_bde, .insta_bde{
     width: min-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     padding-top: 2vw;
     align-items: center;
