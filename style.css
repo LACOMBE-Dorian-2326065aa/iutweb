@@ -672,6 +672,7 @@ footer path{
 .intra_content{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15em;
 }
 
 .intra_content > div{
@@ -948,5 +949,38 @@ footer path{
 .annonces_events h3{
     padding: 1em 0;
     text-align: center;
+    letter-spacing: 1px;
+}
+
+.annonces_events img{
+    max-height: 10em;
+    object-fit: cover;
+    object-position: 0 0;
+    border-radius: 5px;
+}
+
+.annonces_events div:has(input:checked) > img{
+    max-height: fit-content;
+}
+
+.annonces_events > div > p img{
+    width: 100%;
+    max-height: fit-content;
+    margin: 0.5em 0;
+}
+
+.annonces_events > div > div > p:after{
+    content: " plus...";
+}
+
+.annonces_events:has(input:checked) > div > div > p:after{
+    content: " moins..."
+}
+
+.faq{
+    width: fit-content;
+    margin: 0 auto 1em auto;
+    padding: 0.5em 0.3em;
+    border-bottom: #000 2px solid;
     letter-spacing: 1px;
 }
