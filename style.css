@@ -504,9 +504,9 @@ footer path{
 }
 
 .input_connexion:hover{
-    height: 35px;
-    width: 355px;
+    box-shadow: 0 0 5px #38B0E3;
     outline : white 1.5px solid;
+    cursor: pointer;
 }
 
 
@@ -672,6 +672,7 @@ footer path{
 .intra_content{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15em;
 }
 
 .intra_content > div{
@@ -681,6 +682,7 @@ footer path{
 .chat{
     box-shadow: 0 0 4px #EEE0C7;
     border-radius: 10px;
+    height: fit-content;
 }
 
 .chatbox{
@@ -887,6 +889,95 @@ footer path{
 }
 
 .intra_infos h2{
+    width: fit-content;
+    margin: 0 auto 1em auto;
+    padding: 0.5em 0.3em;
+    border-bottom: #000 2px solid;
+    letter-spacing: 1px;
+}
+
+.annonces_events{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.annonces_events > div{
+    position: relative;
+    width: 17em;
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.8em;
+    height: fit-content;
+    max-height: 20em;
+}
+
+.annonces_events .checkbox{
+    position: relative;
+    margin-top: 1em;
+}
+
+.annonces_events .checkbox input{
+    width: 100%;
+    opacity: 0;
+    height: 2em;
+    z-index: 50;
+}
+
+.annonces_events .checkbox p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F08C21;
+}
+
+.annonces_events input:hover{
+    cursor: pointer;
+}
+
+.annonces_events > div > p{
+    overflow-y: hidden;
+}
+
+.annonces_events div:has(input:checked){
+    max-height: fit-content;
+}
+
+.annonces_events h3{
+    padding: 1em 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.annonces_events img{
+    max-height: 10em;
+    object-fit: cover;
+    object-position: 0 0;
+    border-radius: 5px;
+}
+
+.annonces_events div:has(input:checked) > img{
+    max-height: fit-content;
+}
+
+.annonces_events > div > p img{
+    width: 100%;
+    max-height: fit-content;
+    margin: 0.5em 0;
+}
+
+.annonces_events > div > div > p:after{
+    content: " plus...";
+}
+
+.annonces_events:has(input:checked) > div > div > p:after{
+    content: " moins..."
+}
+
+.faq{
     width: fit-content;
     margin: 0 auto 1em auto;
     padding: 0.5em 0.3em;
