@@ -530,85 +530,41 @@ footer path{
     margin: auto;
 }
 
-.entete{
+.entete, .entete2, .entete_index, .entete_intra{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url('img/bde.jpg'); 
     background-size: cover;
     color: #fff;
     padding: 5vw 0;
     height: 15vw;
 }
 
-.entete h1{
+.entete{
+    background-image: url('img/bde.jpg'); 
+}
+
+.entete h1, .entete2 h1, .entete_index h1, .entete_intra h1{
+    text-align: center;
     font-family: Times, Times New Roman, serif;
     font-size: 4vw;
     width: 100%;
     height: 20vw;
     padding: 5vw 0;
     display: block;
+    font-weight: 500;
 }
 
 .entete2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url('img/but_info.jpg'); 
-    background-size: cover;
-    color: #fff;
-    padding: 5vw 0;
-    height: 15vw;
-}
-
-.entete2 h1{
-    font-family: 'Playfair Display', serif;
-    font-size: 4vw;
-    width: 100%;
-    height: 20vw;
-    padding: 5vw 0;
-    display: block;
+    background-image: url('img/but_info.jpg');
 }
 
 .entete_index{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url('img/iut_aix.jpeg'); 
-    background-size: cover;
-    color: #fff;
-    padding: 5vw 0;
-    height: 15vw;
-}
-
-.entete_index h1{
-    font-family: 'Playfair Display', serif;
-    font-size: 4vw;
-    width: 100%;
-    height: 20vw;
-    padding: 5vw 0;
-    display: block;
+    background-image: url('img/iut_aix.jpeg');
 }
 
 .entete_intra{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url('img/iut_amphi.jpg'); 
-    background-size: cover;
-    color: #fff;
-    padding: 5vw 0;
-    height: 15vw;
-}
-
-.entete_intra h1{
-    font-family: 'Playfair Display', serif;
-    font-size: 4vw;
-    width: 100%;
-    height: 20vw;
-    padding: 5vw 0;
-    display: block;
-    text-align: center;
+    background-image: url('img/iut_amphi.jpg');
 }
 
 .but h2{
@@ -698,6 +654,8 @@ footer path{
 .chatbox{
     display: flex;
     flex-direction: column;
+    height: 40em;
+    overflow-y: scroll;
 }
 
 .chat h3{
@@ -707,6 +665,48 @@ footer path{
     font-size: 1.5em;
     border-bottom: #ccc 1px solid;
     letter-spacing: 1px;
+}
+
+.discussions{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: #ccc 1px solid;
+}
+
+.discussions div{
+    padding: 1em;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    letter-spacing: 1px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    margin: auto 0;
+}
+
+.discussions div:first-child{
+    border-top-left-radius: 10px;
+}
+
+.discussions div:last-child{
+    border-radius: 15em;
+    outline: rgba(0, 0, 0, 0.3) 1px solid;
+    padding: 0.1em;
+    font-size: 1.2em;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.5em;
+}
+
+.discussions .actual_discu{
+    background: #A6DBF5;
+}
+
+.discussions div:hover{
+    cursor: pointer;
+    background: rgba(147, 217, 243, 0.5);
 }
 
 .chatbox > div > div:not(.text){
@@ -724,7 +724,7 @@ footer path{
 .chatbox > div.self_message > div:not(.text){
     justify-content: right;
     margin: 1em 0.8em 0 auto;
-    background: linear-gradient(to right, #38B0E3 20%, #A6DBF5 80%);
+    background: #A6DBF5;
 }
 
 .chatbox > div > div > p{
@@ -744,6 +744,10 @@ footer path{
 
 .chatbox > div > div > p span:nth-child(2){
     margin: 0 0.3em;
+}
+
+.chatbox > div:first-child{
+    margin-top: auto;
 }
 
 .text{
@@ -802,11 +806,6 @@ footer path{
 .body_intra{
     background: url('img/bg_amu.png');
     background-size: cover;
-}
-
-.chatbox{
-    max-height: 40em;
-    overflow-y: scroll;
 }
 
 .chatbox::-webkit-scrollbar {
@@ -983,7 +982,7 @@ footer path{
     content: " plus...";
 }
 
-.annonces_events:has(input:checked) > div > div > p:after{
+.annonces_events > div:has(input:checked) > div > p:after{
     content: " moins..."
 }
 

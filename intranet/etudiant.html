@@ -6,6 +6,7 @@
     <title>IUT Aix-en-Provence - Département Informatique</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../img/favicon.ico">
+    <script src="../main.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
         </nav>
     </header>
     <div class="entete_intra">
-        <h1>Intra-IUT</h1>
+        <h1>INTRA-IUT</h1>
     </div>
     <h2 class="bienvenue">Bienvenue dans votre espace étudiant sur l'Intra-IUT !</h2>
     <div class="intra_content">
@@ -127,7 +128,13 @@
         </div>
         <div class="intra_right">
             <div class="chat">
-                <h3>Chat IUT</h3>
+                <!-- <h3>Chat IUT</h3> -->
+                <div class="discussions">
+                    <div class="actual_discu" onclick="discu(1)"><b>Chat global</b></div>
+                    <div onclick="discu(2)">Hugo V.</div>
+                    <div onclick="discu(3)" class="prof">Alain C.</div>
+                    <div>+</div>
+                </div>
                 <div class="chatbox">
 
                     <div class="message">
@@ -278,7 +285,7 @@
                     </div>
                 </div>
                 <script>
-                    document.getElementsByClassName("chatbox")[0].scrollTo(0, document.getElementsByClassName("chatbox")[0].scrollHeight);
+                    scroll();
                 </script>
                 <form class="send">
                     <input type="text" name="message" placeholder="Votre message...">
