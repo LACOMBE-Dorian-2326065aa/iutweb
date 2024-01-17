@@ -627,3 +627,110 @@ footer path{
     fill: #fff;
     display: block;
 }
+
+.bienvenue{
+    width: fit-content;
+    border-bottom: 2px #000 solid;
+    margin: 2em auto;
+    padding: 0.5em 1em;
+}
+
+.intra_content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.intra_content > div{
+    width: 45vw;
+}
+
+.chat{
+    box-shadow: 0 0 4px #EEE0C7;
+    border-radius: 10px;
+}
+
+.chatbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.chat h3{
+    margin: 0.2em auto;
+    width: fit-content;
+    padding: 0.1em 0.3em;
+    font-size: 1.5em;
+}
+
+.chatbox > div > div:not(.text){
+    background: #dadada;
+    width: fit-content;
+    max-width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0.6em;
+    margin: 1em 0 0 0.8em;
+    border-radius: 0.3em; 
+}
+
+.chatbox > div.self_message > div:not(.text){
+    justify-content: right;
+    margin: 1em 0.8em 0 auto;
+    background: linear-gradient(to right, #38B0E3 20%, #A6DBF5 80%);
+}
+
+.chatbox > div > div > p{
+    color: #5f5f5f;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row-reverse;
+    width: fit-content;
+    max-width: 45%;
+    padding: 0.4em 0.2em;
+}
+
+.chatbox > div.self_message > div > p{
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.chatbox > div > div > p span:nth-child(2){
+    margin: 0 0.3em;
+}
+
+.text{
+    display: flex;
+}
+
+.self_message .text{
+    flex-direction: row-reverse;
+}
+
+.chatbox div .triangle{
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 1em solid #dadada;
+    border-right: 0.5em solid transparent;
+    border-left: 0.5em solid transparent;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    margin-left: 1.5em;
+}
+
+.chatbox .self_message .triangle{
+    margin-right: 1.5em;
+    margin-left: 0;
+    border-top: 1em solid #A6DBF5;
+}
+
+.prof{
+    color: #8F1738;
+    font-weight: bold;
+}
+
+.chatbox span:nth-child(3){
+    font-weight: bold;
+}
