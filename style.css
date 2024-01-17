@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
     margin: 0;
@@ -448,9 +449,18 @@ footer path{
 
 .reseaux_bde{
     display: flex;
+    flex-direction: column;
     margin: auto;
-    width: 20vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    align-items: center;
+    width: 25vw;
     justify-content: space-around;
+}
+
+.reseaux_bde h3{
+    margin-bottom: 2vw;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .reseaux_bde a{
@@ -983,4 +993,16 @@ footer path{
     padding: 0.5em 0.3em;
     border-bottom: #000 2px solid;
     letter-spacing: 1px;
+}
+
+.mess_reseaux{
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.image_reseaux{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15vw;
 }
