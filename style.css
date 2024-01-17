@@ -977,10 +977,77 @@ footer path{
     content: " moins..."
 }
 
-.faq{
+.faq h2{
     width: fit-content;
-    margin: 0 auto 1em auto;
+    margin: 3em auto 1em auto;
     padding: 0.5em 0.3em;
     border-bottom: #000 2px solid;
     letter-spacing: 1px;
+}
+
+.questions > div{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    width: 80%;
+    border-radius: 0.5em;
+    margin: 1em auto;
+    position: relative;
+}
+
+.questions > div:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.questions div > div{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.questions input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.questions input:hover{
+    cursor: pointer;
+}
+
+.questions > div:has(input:checked) > div{
+    max-height: fit-content;
+    border-top: 1px #000 solid;
+    margin-top: 1em;
+    padding-top: 1em;
+    transition: 300ms;
+}
+
+.questions > div:has(input:checked) .down, .questions > div:has(input:not(:checked)) .up{
+    display: none;
+}
+
+.questions> div:has(input:checked) .up, .questions > div:has(input:not(:checked)) .down{
+    display: block;
+}
+
+.questions li{
+    list-style-type: disc;
+}
+
+.questions li::marker{
+    color: #F08C21;
+}
+
+.questions > div > p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions svg{
+    fill: #38B0E3;
+    width: 1.2em;
+    height: 1.2em;
 }
