@@ -271,8 +271,6 @@ footer path{
 }
 
 .intro_bde{
-    align-items: center;
-    display: flex;
     background : #fff;
     box-shadow: 0 0 2px black, -5px 5px 0 #FBBA00;
     border-radius: 5px;
@@ -288,8 +286,6 @@ footer path{
 }
 
 .carte_bde p{
-    align-items: center;
-    display: flex;
     background : #fff;
     box-shadow: 0 0 2px black, -5px 5px 0 #FBBA00;
     border-radius: 5px;
