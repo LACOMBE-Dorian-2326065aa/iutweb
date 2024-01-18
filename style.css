@@ -652,6 +652,10 @@ footer path{
     margin: 3em 0 0 0;
 }
 
+.intra_prof{
+    margin: 3em 0 15em 0;
+}
+
 .intra_content > div{
     width: 45vw;
 }
