@@ -133,7 +133,7 @@ main{
     width: 40vw;
     margin-top: 2em;
     border-radius: 5px;
-    box-shadow: 0 0 4px #EEE0C7;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     padding: 1em;
 }
 
@@ -182,7 +182,7 @@ main{
     width: 90%;
     margin: 2em auto 0 auto;
     border-radius: 5px;
-    box-shadow: 0 0 4px #EEE0C7;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     padding: 1em;
 }
 
@@ -252,17 +252,17 @@ footer path{
     justify-content: space-around;
 }
 
-.logofacebook, .logoIut, .logoDiscord{
+.logoFacebook, .logoIut, .logoInstagram, .logoLinkedin{
     width: 3vw;
     transition: 150ms ease-in-out;
 }
 
-.logofacebook:hover, .logoIut:hover, .logoDiscord:hover{
+.logoFacebook:hover, .logoIut:hover, .logoLinkedin:hover, .logoInstagram:hover{
     transform: scale(1.05);
 }
 
 .carte_bde img{
-    margin: 5vw;
+    margin: 2vw auto;
     height: 40vw;
     text-align: center;
     border-radius: 20px;
@@ -270,6 +270,14 @@ footer path{
 
 .carte_bde{
     text-align: center;
+}
+
+.carte_bde .bde_events{
+    margin-top: 3em;
+}
+
+.bde_events a{
+    text-decoration: none;
 }
 
 .intro_bde{
@@ -352,7 +360,7 @@ footer path{
 .infos_images{
     width: 50vw;
     border-radius: 5px;
-    box-shadow: 0 0 4px #EEE0C7;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -401,7 +409,7 @@ footer path{
 .batiment{
     width: 30vw;
     border-radius: 5px;
-    box-shadow: 0 0 4px #EEE0C7;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -638,7 +646,10 @@ footer path{
 .intra_content{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 15em;
+}
+
+.intra_content2{
+    margin: 3em 0 15em 0;
 }
 
 .intra_content > div{
@@ -646,7 +657,7 @@ footer path{
 }
 
 .chat{
-    box-shadow: 0 0 4px #EEE0C7;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     height: fit-content;
 }
@@ -988,7 +999,7 @@ footer path{
 
 .faq h2{
     width: fit-content;
-    margin: 3em auto 1em auto;
+    margin: 0 auto 1em auto;
     padding: 0.5em 0.3em;
     border-bottom: #000 2px solid;
     letter-spacing: 1px;
@@ -1071,4 +1082,51 @@ footer path{
     flex-direction: row;
     justify-content: space-between;
     width: 15vw;
+}
+
+.publish{
+    width: fit-content;
+    margin: 0.2em auto;
+    background: #F08C21;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.publish svg{
+    fill: #fff;
+    margin-right: 0.3em;
+    width: 1em;
+    height: 1em;
+}
+
+.publish:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.message > div{
+    position: relative;
+}
+
+.chatstaff .message > div:not(.text):before{
+    content: "❌";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(30%, -50%);
+    opacity: 0.2;
+}
+
+.chatstaff .self_message > div:not(.text):before{
+    left: 0;
+    transform: translate(-130%, -50%);
+}
+
+.chatstaff .message > div:not(.text):hover:before{
+    opacity: 1;
+    cursor: pointer;
 }
