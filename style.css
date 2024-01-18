@@ -649,7 +649,7 @@ footer path{
 }
 
 .intra_content2{
-    margin: 3em 0 15em 0;
+    margin: 3em 0 0 0;
 }
 
 .intra_content > div{
@@ -1129,4 +1129,39 @@ footer path{
 .chatstaff .message > div:not(.text):hover:before{
     opacity: 1;
     cursor: pointer;
+}
+
+.parrain{
+    width: 40vw;
+    margin: 5em auto 15em auto;
+    box-shadow: 0.5em 0.5em 0 #313131;
+    outline: #313131 1px solid;
+    border-radius: 10px;
+}
+
+.parrain h2{
+    width: fit-content;
+    margin: 0 auto 1em auto;
+    padding: 0.8em 0.3em;
+    border-bottom: #000 2px solid;
+    letter-spacing: 1px;
+}
+
+.parrain p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.parrain a{
+    text-decoration: none;
+    color: #fff;
+    background: #F08C21;
+    padding: 0.2em 0.3em;
+    border-radius: 0.5em;
+}
+
+.parrain a:hover{
+    filter: brightness(85%);
 }
